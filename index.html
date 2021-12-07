@@ -24,8 +24,8 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
+    <!-- Navbar-->
     <nav class="navbar navbar-dark bg-purple">
       <div class="container-fluid">
         <!-- Navbar Brand-->
@@ -51,13 +51,12 @@
                 type="text"
                 class="form-control"
                 placeholder="Search for..."
-                aria-label="Recipient's username"
-                aria-describedby="button-addon2"
+                aria-describedby="button-search"
               />
               <button
                 class="btn btn-outline-secondary bg-pink"
                 type="button"
-                id="button-addon2"
+                id="button-search"
               >
                 <span class="fas fa-search"></span>
               </button>
@@ -80,31 +79,92 @@
       </div>
     </nav>
 
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-purple w-25">
-        <h5 class="text-white h4">Collapsed content</h5>
-        <span class="text-muted">Toggleable via the navbar brand.</span>
-      </div>
-    </div>
-
     <!-- Sidebar -->
-    <div>
-      <div>
-        <nav></nav>
-      </div>
+    <div class="collapse show" id="navbarToggleExternalContent">
+      <nav class="navbar-dark d-flex row bg-purple w-25 vh-100">
+        <ul class="navbar-nav px-3">
+          <li class="nav-item">
+            <a class="nav-link my-2" href="#"
+              ><i class="fas fa-home mx-2"></i>Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-2" href="#"
+              ><i class="fas fa-tshirt mx-2"></i>Products</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link my-2">
+              <i class="fas fa-border-all mx-2"></i>Orders
+              <i class="fas fa-angle-right mx-3"></i
+            ></a>
 
-      <!-- The Main Content -->
-      <div>
-        <main>
-          <!-- Reports Cards -->
-          <!-- Reports Chart -->
-          <!-- Customers Table -->
-        </main>
+            <ul
+              class="list-unstyled collapse"
+              id="submenu1"
+              data-bs-parent="#menu"
+            >
+              <li class="w-100">
+                <a href="#" class="nav-link px-3">
+                  <span class="d-none d-sm-inline">New Orders</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-3">
+                  <span class="d-none d-sm-inline">Past Orders</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link my-2">
+              <i class="fas fa-chart-area mx-2"></i>Reports
+              <i class="fas fa-angle-right mx-3"></i
+            ></a>
 
-        <!-- Customers Table -->
-        <footer></footer>
-      </div>
+            <ul
+              class="list-unstyled collapse"
+              id="submenu2"
+              data-bs-parent="#menu"
+            >
+              <li class="w-100">
+                <a href="#" class="nav-link px-3">
+                  <span class="d-none d-sm-inline">Monthly Reports</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-3">
+                  <span class="d-none d-sm-inline">Yearly Reports</span></a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item my-2">
+            <a class="nav-link" href="#">
+              <i class="fas fa-users mx-2"></i> Customers</a
+            >
+          </li>
+        </ul>
+        <footer class="mt-auto bg-purple px-4">
+          <p>Logged in as:</p>
+          <p>nrt admin</p>
+        </footer>
+      </nav>
     </div>
+
+    <!-- The Main Content -->
+    <div>
+      <main>
+        <!-- Reports Cards -->
+        <!-- Reports Chart -->
+        <!-- Customers Table -->
+      </main>
+
+      <!-- Customers Table -->
+      <footer></footer>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
