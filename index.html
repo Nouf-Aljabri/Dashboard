@@ -15,10 +15,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
-      crossorigin="anonymous"
-    ></script>
+    
     <script
       src="https://kit.fontawesome.com/9bf9aa04fa.js"
       crossorigin="anonymous"
@@ -29,6 +26,7 @@
     <nav class="navbar navbar-dark bg-purple">
       <div class="container-fluid">
         <!-- Navbar Brand-->
+         
         <a class="navbar-brand" href="index.html">Nrt Solution</a>
         <!-- Sidebar Toggle Icon-->
         <button
@@ -42,6 +40,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+    
 
         <div class="d-flex">
           <!-- Navbar Search-->
@@ -78,18 +77,22 @@
         </div>
       </div>
     </nav>
+   
 
+    
     <!-- Sidebar -->
-    <div class="collapse show" id="navbarToggleExternalContent">
-      <nav class="navbar-dark d-flex row bg-purple w-25 vh-100">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="collapse show bg-purple col-2 p-0" id="navbarToggleExternalContent">
+      <nav class="navbar-dark">
         <ul class="navbar-nav px-3">
           <li class="nav-item">
-            <a class="nav-link my-2" href="#"
+            <a class="nav-link my-2" href="index.html"
               ><i class="fas fa-home mx-2"></i>Home</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link my-2" href="#"
+            <a class="nav-link my-2" href="products.html"
               ><i class="fas fa-tshirt mx-2"></i>Products</a
             >
           </li>
@@ -146,30 +149,121 @@
             >
           </li>
         </ul>
-        <footer class="mt-auto bg-purple px-4">
-          <p>Logged in as:</p>
-          <p>nrt admin</p>
-        </footer>
       </nav>
+      <footer class="bg-purple px-4 mt-0">
+        <p>Logged in as:</p>
+        <p>nrt admin</p>
+      </footer>
     </div>
 
     <!-- The Main Content -->
-    <div>
-      <main>
+
+      <main class="container col-10 mx-auto my-2">
         <!-- Reports Cards -->
+        <div class="container-fluid">
+            <h1>Dashboard</h1>
+            <p class="text-muted">Dashboard</p>
+            
+            <div class="row">
+                <div class="card bg-pink col mx-3 px-0">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Sales</h5>
+                      <p class="card-text">340.00SAR</p>
+                    </div>
+                    <div class="card-footer"> <a href="#" class="card-link text-white">View Details <i class="fas fa-angle-right mx-3"></i></a></div>
+                  </div>
+
+                  <div class="card bg-pink col mx-3 px-0">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Orders</h5>
+                      <p class="card-text">1890</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="card-link text-white">View Details  <i class="fas fa-angle-right mx-3"></i></a></div>
+                  </div>
+                  <div class="card bg-pink col mx-3 px-0">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Visitors</h5>
+                      <p class="card-text">352</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="card-link text-white">View Details <i class="fas fa-angle-right mx-3"></i></a></div>
+                  </div>
+                  <div class="card bg-pink col mx-3 px-0">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Conversation Rate</h5>
+                      <p class="card-text"> 3.37%</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="card-link text-white">View Details <i class="fas fa-angle-right mx-3"></i></a></div>
+                  </div>
+            </div>
+        
         <!-- Reports Chart -->
+            <div class="row my-4" >
+            <div class="card col mx-3 px-0">
+                <h5 class="card-header"><i class="fas fa-border-all mx-2"></i>Orders</h5>
+                <div class="card-body">
+                    <div>
+                        <canvas id="myAreaChart"></canvas>
+                      </div>
+                </div>
+              </div>
+            
+
+              <div class="card col mx-3 px-0">
+                <h5 class="card-header"><i class="fas fa-eye"></i> Visitors</h5>
+                <div class="card-body">
+                    <div>
+                        <canvas id="myBarChart"></canvas>
+                      </div>
+                </div>
+              </div>
+            </div>
+        
+
+            <div class="row  my-4">
+            <div class="card col mx-3 px-0">
+                <h5 class="card-header"><i class="fas fa-map-marker"></i> Visitors Cities</h5>
+                <div class="card-body">
+                    <div>
+                        <canvas id="myPieChart"></canvas>
+                      </div>
+                </div>
+              </div>
+           
+
+            <div class="card col mx-3 px-0">
+                <h5 class="card-header"><i class="fas fa-star"></i> Customers Rate</h5>
+                <div class="card-body">
+                    <div>
+                        <canvas id="myLinearChart"></canvas>
+                      </div>
+                </div>
+              </div>
+           
+        </div>
+       
+        
         <!-- Customers Table -->
+        <div class="row  my-4">
+            <div class="card col mx-3 px-0">
+                <h5 class="card-header"><i class="fas fa-users mx-2"></i> Customers</h5>
+                <div class="card-body">
+                 
+                </div>
+              </div></div>
+        </div>
       </main>
 
-      <!-- Customers Table -->
+      <!-- Footer -->
       <footer></footer>
+    
     </div>
-
+</div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/charts.js"></script>
   </body>
