@@ -1,6 +1,5 @@
     
-
-    $(document).ready(function() {
+ $(document).ready(function() {
         $('#example').DataTable( {
             "ajax": "../json/data.json",
             "columns": [

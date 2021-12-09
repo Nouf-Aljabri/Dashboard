@@ -58,12 +58,29 @@ const products = [
 ];
 
 
-for (let i=0; i<products.length; i++){
- document.getElementById("product-img"+products[i].ProductId).setAttribute('src',products[i].image);
- document.getElementById("product-name"+products[i].ProductId).innerHTML=products[i].name;
- document.getElementById("product-desc"+products[i].ProductId).innerHTML=products[i].description;
- document.getElementById("product-price"+products[i].ProductId).innerHTML=products[i].price;
- document.getElementById("product-status"+products[i].ProductId).innerHTML=products[i].status;
-
-}
-
+document.getElementById('cards').innerHTML = products.map(product => 
+  `<div class="row m-3">
+  <div class="card mb-3 mx-auto w-75" >
+      <div class="row g-0">
+        <div class="col-md-4 m-auto">
+          <img src="${product.image}" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <h5 class="card-title" > ${product.name}</h5>
+            <p class="card-text" id="product-desc1">  ${product.description} </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <h5 class="card-text"> ${product.price} </h5>
+            <h5 class="card-text text-success"> ${product.status} </h5>
+            <div><a href="#" class="btn bg-purple w-100 my-1">Details</a></div>
+            <div><a href="#" class="btn bg-pink w-100 my-1">Delete</a></div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>`
+).join('');
