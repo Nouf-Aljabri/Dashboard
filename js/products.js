@@ -58,3 +58,12 @@ const products = [
 ];
 
 
+for (let i=0; i<products.length; i++){
+ document.getElementById("product-img"+products[i].ProductId).setAttribute('src',products[i].image);
+ document.getElementById("product-name"+products[i].ProductId).innerHTML=products[i].name;
+ document.getElementById("product-desc"+products[i].ProductId).innerHTML=products[i].description;
+ document.getElementById("product-price"+products[i].ProductId).innerHTML=products[i].price;
+ document.getElementById("product-status"+products[i].ProductId).innerHTML=products[i].status;
+
+}
+

@@ -15,68 +15,69 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
           crossorigin="anonymous"
         />
-        
         <script
           src="https://kit.fontawesome.com/9bf9aa04fa.js"
           crossorigin="anonymous"
         ></script>
       </head>
   <body>
-        <!-- Navbar-->
+     <!-- Navbar-->
     <nav class="navbar navbar-dark bg-purple">
-        <div class="container-fluid">
-          <!-- Navbar Brand-->
-           
-          <a class="navbar-brand" href="index.html">Nrt Solution</a>
-          <!-- Sidebar Toggle Icon-->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-  
-          <div class="d-flex">
-            <!-- Navbar Search-->
-            <form class="navbar-form" role="search">
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Search for..."
-                  aria-describedby="button-search"
-                />
-                <button
-                  class="btn btn-outline-secondary bg-pink"
-                  type="button"
-                  id="button-search"
-                >
-                  <span class="fas fa-search"></span>
-                </button>
-              </div>
-            </form>
-  
-            <!-- User Profile-->
-            <a
-              class="nav-link dropdown-toggle text-white-50"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
+      <div class="container-fluid">
+        <!-- Navbar Brand-->
+        <div class="d-flex">
+        <a class="navbar-brand" href="index.html">Nrt Solution</a>
+        <!-- Sidebar Toggle Icon-->
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+            
+        <div class="d-flex">
+          <!-- Navbar Search-->
+          <form class="navbar-form" role="search">
+            <div class="input-group ">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search for..."
+                aria-describedby="button-search"
+              />
+              <button
+                class="btn btn-outline-secondary bg-pink"
+                type="button"
+                id="button-search"
+              >
+                <span class="fas fa-search"></span>
+              </button>
+            </div>
+          </form>
+
+          <!-- User Profile-->
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle text-white-50" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <span class="fas fa-user-alt"> </span>
             </a>
+            <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Setting</a></li>
+              <li><a class="dropdown-item" href="#">New Orders</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
           </div>
+         
         </div>
-      </nav>
+      </div>
+    </nav>
      
     
     <!-- Sidebar -->
@@ -130,7 +131,7 @@
                   data-bs-parent="#menu"
                 >
                   <li class="w-100">
-                    <a href="#" class="nav-link px-3">
+                    <a href="report.html" class="nav-link px-3">
                       <span class="d-none d-sm-inline">Monthly Reports</span>
                     </a>
                   </li>
@@ -143,7 +144,7 @@
               </li>
     
               <li class="nav-item my-2">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="customers.html">
                   <i class="fas fa-users mx-2"></i> Customers</a
                 >
               </li>
@@ -159,27 +160,27 @@
       <!-- The Main Content -->
 
       <main class="container col-10 mx-auto my-2">
-        <!-- Reports Cards -->
+        <!-- Products Cards -->
         <div class="container-fluid">
             <h1>Products</h1>
             <p class="text-muted"> <a href="#"> Dashboard</a> / Products</p>
-
-            <div class="row">
+           <!--------------Card 1 -------------->
+            <div class="row m-3">
                 <div class="card mb-3 mx-auto w-75" >
                     <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="" id="product-img" class="img-fluid rounded-start" alt="...">
+                      <div class="col-md-4 m-auto">
+                        <img src="" id="product-img1" class="img-fluid rounded-start" alt="...">
                       </div>
                       <div class="col-md-4">
                         <div class="card-body">
-                          <h5 class="card-title" id="product-name">name</h5>
-                          <p class="card-text" id="product-desc"> desc</p>
+                          <h5 class="card-title" id="product-name1"></h5>
+                          <p class="card-text" id="product-desc1"> </p>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="card-body">
-                          <h5 class="card-text" id="product-price"> price</h5>
-                          <h5 class="card-text" id="product-status"> status</h5>
+                          <h5 class="card-text" id="product-price1"> </h5>
+                          <h5 class="card-text text-success" id="product-status1"> </h5>
                           <div><a href="#" class="btn bg-purple w-100 my-1">Details</a></div>
                           <div><a href="#" class="btn bg-pink w-100 my-1">Delete</a></div>
                           
@@ -188,22 +189,162 @@
                     </div>
                   </div>
                   </div>
+               <!--------------Card 2 -------------->
+                  <div class="row m-3">
+                    <div class="card mb-3 mx-auto w-75" >
+                        <div class="row g-0">
+                          <div class="col-md-4 m-auto">
+                            <img src="" id="product-img2" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card-body">
+                              <h5 class="card-title" id="product-name2"></h5>
+                              <p class="card-text" id="product-desc2"></p>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card-body">
+                              <h5 class="card-text" id="product-price2"> </h5>
+                              <h5 class="card-text text-success" id="product-status2"> </h5>
+                              <div><a href="#" class="btn bg-purple w-100 my-1">Details</a></div>
+                              <div><a href="#" class="btn bg-pink w-100 my-1">Delete</a></div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                 <!--------------Card 3 -------------->
+                      <div class="row m-3">
+                        <div class="card mb-3 mx-auto w-75" >
+                            <div class="row g-0">
+                              <div class="col-md-4 m-auto">
+                                <img src="" id="product-img3" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card-body">
+                                  <h5 class="card-title" id="product-name3"></h5>
+                                  <p class="card-text" id="product-desc3"></p>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card-body">
+                                  <h5 class="card-text" id="product-price3"> </h5>
+                                  <h5 class="card-text text-success" id="product-status3"> </h5>
+                                  <div><a href="#" class="btn bg-purple w-100 my-1">Details</a></div>
+                                  <div><a href="#" class="btn bg-pink w-100 my-1">Delete</a></div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                   <!--------------Card 4 -------------->
+                          <div class="row m-3">
+                            <div class="card mb-3 mx-auto w-75" >
+                                <div class="row g-0">
+                                  <div class="col-md-4 m-auto">
+                                    <img src="" id="product-img4" class="img-fluid rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="card-body">
+                                      <h5 class="card-title" id="product-name4"></h5>
+                                      <p class="card-text" id="product-desc4"></p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="card-body">
+                                      <h5 class="card-text" id="product-price4"> </h5>
+                                      <h5 class="card-text text-success" id="product-status4"> </h5>
+                                      <div><a href="#" class="btn bg-purple w-100 my-1">Details</a></div>
+                                      <div><a href="#" class="btn bg-pink w-100 my-1">Delete</a></div>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                       <!--------------Card 5 -------------->
+                              <div class="row m-3">
+                                <div class="card mb-3 mx-auto w-75" >
+                                    <div class="row g-0">
+                                      <div class="col-md-4 m-auto">
+                                        <img src="" id="product-img5" class="img-fluid rounded-start" alt="...">
+                                      </div>
+                                      <div class="col-md-4">
+                                        <div class="card-body">
+                                          <h5 class="card-title" id="product-name5"></h5>
+                                          <p class="card-text" id="product-desc5"></p>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <div class="card-body">
+                                          <h5 class="card-text" id="product-price5"> </h5>
+                                          <h5 class="card-text text-success" id="product-status5"> </h5>
+                                          <div><a href="#" class="btn bg-purple w-100 my-1">Details</a></div>
+                                          <div><a href="#" class="btn bg-pink w-100 my-1">Delete</a></div>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                         <!--------------Card 6 -------------->
+                                  <div class="row m-3">
+                                    <div class="card mb-3 mx-auto w-75" >
+                                        <div class="row g-0">
+                                          <div class="col-md-4 m-auto">
+                                            <img src="" id="product-img6" class="img-fluid rounded-start" alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="card-body">
+                                              <h5 class="card-title" id="product-name6"></h5>
+                                              <p class="card-text" id="product-desc6"></p>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="card-body">
+                                              <h5 class="card-text" id="product-price6"> </h5>
+                                              <h5 class="card-text text-success" id="product-status6"> </h5>
+                                              <div><a href="#" class="btn bg-purple w-100 my-1">Details</a></div>
+                                              <div><a href="#" class="btn bg-pink w-100 my-1">Delete</a></div>
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div>
+                          <!--------------Card 7 -------------->
+                                      <div class="row m-3">
+                                        <div class="card mb-3 mx-auto w-75" >
+                                            <div class="row g-0">
+                                              <div class="col-md-4 m-auto">
+                                                <img src="" id="product-img7" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-md-4">
+                                                <div class="card-body">
+                                                  <h5 class="card-title" id="product-name7"></h5>
+                                                  <p class="card-text" id="product-desc7"></p>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-4">
+                                                <div class="card-body">
+                                                  <h5 class="card-text" id="product-price7"> </h5>
+                                                  <h5 class="card-text text-success" id="product-status7"> </h5>
+                                                  <div><a href="#" class="btn bg-purple w-100 my-1">Details</a></div>
+                                                  <div><a href="#" class="btn bg-pink w-100 my-1">Delete</a></div>
+                                                  
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
 
-            
-         
-       
         </div>
       </main>
 
-      <!-- Footer -->
-      <footer></footer>
-    
-    
-    
-    
-    
-    
-    
+       <!-- Footer -->
+       <footer class="p-2 text-muted" style="background-color: rgba(0, 0, 0, 0.05);">Copyright <span> &copy;</span> nrt.sa 2021</footer>
     
     </div>
     </div>
@@ -213,6 +354,7 @@
           crossorigin="anonymous"
         ></script>
         <script src="js/scripts.js"></script>
+        <script src="js/products.js"></script>
       </body>
     </html>
     
